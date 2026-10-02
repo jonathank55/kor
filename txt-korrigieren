@@ -229,13 +229,6 @@ DETERMINISTIC_RULES = [
         "reference": "DIN 5008 / Duden Wörterbuch der sprachlichen Zweifelsfälle: Vor und nach dem Gedankenstrich steht stets ein Leerzeichen."
     },
     {
-        "id": "deren_ausbeutung_reflexiv",
-        "pattern": r'\bderen[ \t]+Ausbeutung\b',
-        "replacement_str": "ihre Ausbeutung",
-        "rule": "Grammatik § 484 ff.",
-        "reference": "Duden-Grammatik § 484 ff.: Bei Rückbezug auf das Subjekt ist das Possessivpronomen 'ihre' obligatorisch."
-    },
-    {
         "id": "saemtliche_adjektiv_en",
         "pattern": r'\b(sämtliche|alle|beide)[ \t]+([a-zäöüß]+e)[ \t]+([A-ZÄÖÜ][a-zäöüß]+[en|e])\b',
         "rule": "Grammatik § 1515",
