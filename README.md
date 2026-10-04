@@ -1,4 +1,4 @@
-# txt-korrigieren
+# kor
 
 **Deterministische Text-, Orthografie- und Stilkorrektur-Engine für die Kommandozeile.**
 
@@ -21,15 +21,15 @@ Ein hochpräzises, maximal konservatives Werkzeug zur automatisierten Korrektur 
 ### Einzeiler via Terminal
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/jonathank55/txt-korrigieren/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/jonathank55/kor/main/install.sh | bash
 ```
 
 ### Manuelle Installation
 
 1. **Repository klonen:**
    ```bash
-   git clone https://github.com/jonathank55/txt-korrigieren.git
-   cd txt-korrigieren
+   git clone https://github.com/jonathank55/kor.git
+   cd kor
    ```
 
 2. **Installationsskript ausführen:**
@@ -42,7 +42,7 @@ curl -fsSL https://raw.githubusercontent.com/jonathank55/txt-korrigieren/main/in
 ## Verwendung
 
 ```bash
-txt-korrigieren DATEI [OPTIONEN]
+kor DATEI [OPTIONEN]
 ```
 
 ### Optionen
@@ -61,17 +61,17 @@ txt-korrigieren DATEI [OPTIONEN]
 
 ### 1. Reine Rechtschreib- und Grammatikprüfung (Trockenlauf)
 ```bash
-txt-korrigieren -a Dokument.md
+kor -a Dokument.md
 ```
 
 ### 2. Normative In-situ-Korrektur (Rechtschreibung & Grammatik)
 ```bash
-txt-korrigieren Manuskript.docx
+kor Manuskript.docx
 ```
 
 ### 3. Stil- & Idiomatikkorrektur mit Überarbeitung
 ```bash
-txt-korrigieren -s Aufsatz.rtfd
+kor -s Aufsatz.rtfd
 ```
 
 ---
@@ -89,3 +89,4 @@ txt-korrigieren -s Aufsatz.rtfd
 
 Veröffentlicht unter der [MIT-Lizenz](LICENSE).
 Autor: Jonathan Klatchko
+

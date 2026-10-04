@@ -20,7 +20,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 if os.path.exists(os.path.expanduser("~/.gemini/config/data")):
     DATA_DIR = os.path.expanduser("~/.gemini/config/data")
 else:
-    DATA_DIR = os.environ.get("XDG_DATA_HOME", os.path.expanduser("~/.local/share/txt-korrigieren"))
+    DATA_DIR = os.environ.get("XDG_DATA_HOME", os.path.expanduser("~/.local/share/kor"))
 os.makedirs(DATA_DIR, exist_ok=True)
 DB_PATH = os.path.join(DATA_DIR, "duden_cache.sqlite")
 

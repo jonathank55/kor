@@ -885,7 +885,7 @@ class SingleLineHelpFormatter(argparse.HelpFormatter):
 
 def main():
     parser = argparse.ArgumentParser(
-        prog="txt-korrigieren",
+        prog="kor",
         formatter_class=lambda prog: SingleLineHelpFormatter(prog, max_help_position=16, width=220),
         description="Deterministische Text-, Orthografie- und Stilkorrektur nach Duden und amtlichem Regelwerk.",
         add_help=False
@@ -931,7 +931,7 @@ def main():
         else:
             status_badge = f"{CYAN}{st}{RESET}"
 
-        print(f"\n{BOLD}{BLUE}=== Textkorrektur-Engine (txt-korrigieren) ==={RESET}")
+        print(f"\n{BOLD}{BLUE}=== Textkorrektur-Engine (kor) ==={RESET}")
         print(f"{BLUE}───────────────────────────────────────────────────────────────────────────{RESET}")
         print(f"{BOLD}Datei:{RESET}             {result.file_path}")
         print(f"{BOLD}Status:{RESET}            {status_badge}")

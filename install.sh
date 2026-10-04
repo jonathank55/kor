@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# txt-korrigieren — Deterministische Text-, Orthografie- und Stilkorrektur-Engine
+# kor — Deterministische Text-, Orthografie- und Stilkorrektur-Engine
 # Installationsskript für macOS und Linux
 # ==============================================================================
 
 set -e
 
-echo "=== Installation von txt-korrigieren ==="
+echo "=== Installation von kor ==="
 
 # 1. Zielverzeichnis im PATH ermitteln
 INSTALL_DIR=""
@@ -29,9 +29,9 @@ if command -v pip3 >/dev/null 2>&1; then
 fi
 
 # 3. Binaries und Module installieren
-echo "Installiere txt-korrigieren nach $INSTALL_DIR..."
-cp "$SCRIPT_DIR/txt-korrigieren" "$INSTALL_DIR/txt-korrigieren"
-chmod +x "$INSTALL_DIR/txt-korrigieren"
+echo "Installiere kor nach $INSTALL_DIR..."
+cp "$SCRIPT_DIR/kor" "$INSTALL_DIR/kor"
+chmod +x "$INSTALL_DIR/kor"
 
 if [ -f "$SCRIPT_DIR/duden_orthography_engine.py" ]; then
     cp "$SCRIPT_DIR/duden_orthography_engine.py" "$INSTALL_DIR/duden_orthography_engine.py"
@@ -46,8 +46,8 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
 fi
 
 echo "=============================================================================="
-echo "ERFOLG: txt-korrigieren wurde erfolgreich installiert!"
-echo "Befehl: txt-korrigieren [DATEI] [OPTIONEN]"
-echo "Hilfe:  txt-korrigieren -h"
-echo "Stil:   txt-korrigieren -s [DATEI]"
+echo "ERFOLG: kor wurde erfolgreich installiert!"
+echo "Befehl: kor [DATEI] [OPTIONEN]"
+echo "Hilfe:  kor -h"
+echo "Stil:   kor -s [DATEI]"
 echo "=============================================================================="
